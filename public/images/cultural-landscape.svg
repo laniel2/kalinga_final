@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Place and Landscape</title>
+  <desc id="desc">Illustration of mountains, river terraces, and ancestral land.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3d2a0"/>
+      <stop offset="100%" stop-color="#ba7b3d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#sky)"/>
+  <circle cx="640" cy="110" r="56" fill="#f8e7b8" opacity="0.75"/>
+  <path d="M0 360 L150 240 L260 340 L380 180 L520 360 L650 220 L800 360 L800 520 L0 520 Z" fill="#4d2718" opacity="0.82"/>
+  <path d="M0 390 L110 300 L240 390 L320 320 L440 390 L560 280 L800 390 L800 520 L0 520 Z" fill="#6d3b25" opacity="0.9"/>
+  <g fill="none" stroke="#e7c58f" stroke-width="8" stroke-linecap="round" opacity="0.9">
+    <path d="M160 390 L160 325"/>
+    <path d="M190 390 L190 345"/>
+    <path d="M220 390 L220 330"/>
+    <path d="M520 390 L520 320"/>
+    <path d="M550 390 L550 340"/>
+    <path d="M580 390 L580 330"/>
+  </g>
+  <path d="M120 430 C240 350, 280 350, 355 430" fill="none" stroke="#f6ddaf" stroke-width="12" opacity="0.9"/>
+  <path d="M430 430 C540 350, 610 355, 690 430" fill="none" stroke="#f6ddaf" stroke-width="12" opacity="0.9"/>
+  <g fill="#f3d5a1" opacity="0.9">
+    <circle cx="118" cy="118" r="10"/>
+    <circle cx="152" cy="106" r="8"/>
+    <circle cx="185" cy="120" r="12"/>
+  </g>
+</svg>

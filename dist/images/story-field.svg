@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">From Field to Memory</title>
+  <desc id="desc">Storytelling illustration of a community memory journey through the fields.</desc>
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20140d"/>
+      <stop offset="100%" stop-color="#69462d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg4)"/>
+  <path d="M0 380 C170 330, 220 342, 320 380 S520 420, 800 372 V520 H0 Z" fill="#3e2519"/>
+  <path d="M0 410 C180 350, 250 370, 360 410 S550 455, 800 405 V520 H0 Z" fill="#62462d" opacity="0.9"/>
+  <g stroke="#f0d39e" stroke-width="7" stroke-linecap="round" opacity="0.85">
+    <path d="M130 420 L130 260"/>
+    <path d="M160 420 L160 240"/>
+    <path d="M190 420 L190 285"/>
+    <path d="M610 420 L610 250"/>
+    <path d="M640 420 L640 235"/>
+    <path d="M670 420 L670 275"/>
+  </g>
+  <g fill="#f6d49d" font-family="Georgia, serif" font-size="52" font-weight="700">
+    <text x="96" y="210">A</text>
+    <text x="506" y="196">M</text>
+  </g>
+  <g fill="none" stroke="#f0d39e" stroke-width="4">
+    <path d="M260 160 C330 100, 470 98, 545 168"/>
+    <path d="M270 200 C330 150, 470 146, 535 212"/>
+  </g>
+  <circle cx="215" cy="160" r="56" fill="#d6985e" opacity="0.45"/>
+  <circle cx="575" cy="170" r="62" fill="#d6985e" opacity="0.45"/>
+</svg>

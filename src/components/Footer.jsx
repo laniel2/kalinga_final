@@ -5,7 +5,7 @@ const quick = [
   { label: "History & Heritage", href: "#history" },
   { label: "Language & Knowledge", href: "#language" },
   { label: "Community Today", href: "#today" },
-  { label: "Digital Heritage", href: "#digital" },
+  { label: "Digital Heritage", href: "#/digital" },
 ];
 
 const Facebook = () => (

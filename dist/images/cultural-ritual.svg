@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Ritual Practice</title>
+  <desc id="desc">Illustration of a ceremonial gathering and ancestral ritual lights.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#23150d"/>
+      <stop offset="100%" stop-color="#6d402a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg2)"/>
+  <circle cx="120" cy="110" r="88" fill="#f0b25b" opacity="0.14"/>
+  <circle cx="670" cy="120" r="96" fill="#f0b25b" opacity="0.18"/>
+  <path d="M130 410 L250 190 L420 410 Z" fill="#4d2e1e" opacity="0.7"/>
+  <path d="M420 410 L570 150 L680 410 Z" fill="#3c2218" opacity="0.82"/>
+  <g fill="none" stroke="#f2d8ae" stroke-width="8" stroke-linecap="round" opacity="0.9">
+    <path d="M260 410 L260 235"/>
+    <path d="M350 410 L350 260"/>
+    <path d="M440 410 L440 224"/>
+    <path d="M530 410 L530 250"/>
+  </g>
+  <g fill="#f5d08b">
+    <circle cx="260" cy="168" r="24"/>
+    <circle cx="350" cy="145" r="20"/>
+    <circle cx="440" cy="160" r="26"/>
+    <circle cx="530" cy="142" r="22"/>
+  </g>
+  <g fill="#d99c5d" opacity="0.8">
+    <path d="M218 420h90v18h-90z"/>
+    <path d="M308 420h90v18h-90z"/>
+    <path d="M398 420h90v18h-90z"/>
+    <path d="M488 420h90v18h-90z"/>
+  </g>
+  <path d="M112 420 C170 360, 220 360, 260 420" fill="none" stroke="#e6bf7b" stroke-width="10" opacity="0.9"/>
+  <path d="M540 420 C600 360, 650 360, 700 420" fill="none" stroke="#e6bf7b" stroke-width="10" opacity="0.9"/>
+</svg>

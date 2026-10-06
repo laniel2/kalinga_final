@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Weaving Knowledge</title>
+  <desc id="desc">Illustration of woven textile patterns inspired by Kalinga craftsmanship.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f120d"/>
+      <stop offset="100%" stop-color="#4a2d1f"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dba56b"/>
+      <stop offset="50%" stop-color="#f4d29a"/>
+      <stop offset="100%" stop-color="#c77d3e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg)"/>
+  <circle cx="610" cy="98" r="72" fill="#d69a57" opacity="0.26"/>
+  <rect x="120" y="148" width="560" height="238" rx="18" fill="#20140d" stroke="#d49c64" stroke-width="2" opacity="0.8"/>
+  <g stroke="#f3d7aa" stroke-width="4" stroke-linecap="round" opacity="0.9">
+    <path d="M160 340 L210 210 L260 340 L310 210 L360 340 L410 210 L460 340 L510 210 L560 340 L610 210" fill="none"/>
+    <path d="M150 280 L650 280"/>
+    <path d="M150 220 L650 220"/>
+    <path d="M150 300 L650 300"/>
+    <path d="M150 360 L650 360"/>
+    <path d="M220 180 V370"/>
+    <path d="M290 180 V370"/>
+    <path d="M360 180 V370"/>
+    <path d="M430 180 V370"/>
+    <path d="M500 180 V370"/>
+    <path d="M570 180 V370"/>
+  </g>
+  <g transform="translate(170 74)">
+    <path d="M70 250 C120 120, 160 120, 200 250" fill="none" stroke="#dba56b" stroke-width="18" stroke-linecap="round"/>
+    <path d="M120 250 V90 C120 40, 160 28, 180 72" fill="none" stroke="#f5d7ad" stroke-width="10" stroke-linecap="round"/>
+    <path d="M180 80 C230 100, 250 140, 230 190" fill="none" stroke="#f5d7ad" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="185" cy="86" r="18" fill="#dba56b"/>
+  </g>
+  <g opacity="0.8">
+    <rect x="123" y="412" width="250" height="8" rx="4" fill="#d79c57"/>
+    <rect x="427" y="412" width="250" height="8" rx="4" fill="#d79c57"/>
+  </g>
+</svg>

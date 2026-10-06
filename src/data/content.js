@@ -6,7 +6,7 @@ export const navLinks = [
   { label: "History & Heritage", href: "#history" },
   { label: "Language & Knowledge", href: "#language" },
   { label: "Community Today", href: "#today" },
-  { label: "Digital Heritage", href: "#digital" },
+  { label: "Digital Heritage", href: "#/digital" },
 ];
 
 export const intro = {
@@ -60,7 +60,10 @@ export const topics = [
     image: "/images/digital-heritage.jpg",
     bw: true,
     title: "Digital Heritage",
-    text: "Access digital resources, references, and initiatives that help document and preserve the Kalinga people's heritage. Through technology and collaboration, we ensure their stories, culture, and knowledge remain accessible for generations to come.",
+    text: "Access digital resources that preserve and share Kalinga heritage through a photo gallery, interactive map, digital timeline, infographics, video and audio storytelling, interactive cultural features, and rich digital storytelling experiences that keep the community’s history, identity, and knowledge alive for future generations.",
     cta: "Explore Digital Heritage",
+    href: "#/digital",
   },
 ];
+
+

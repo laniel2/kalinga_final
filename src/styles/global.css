@@ -57,17 +57,29 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   position: relative; display: flex; align-items: center; overflow: hidden; background: var(--charcoal); color: var(--white);
   min-height: calc(100vh - var(--nav-h)); min-height: calc(100svh - var(--nav-h));
 }
+.hero__media {
+  position: absolute; inset: 0; z-index: 0;
+}
+.hero__video,
 .hero__image {
-  position: absolute; inset: 0;
+  position: absolute; inset: 0; width: 100%; height: 100%;
+}
+.hero__video {
+  object-fit: cover; object-position: center 35%;
+  opacity: 0.8; filter: saturate(0.8) contrast(1.08) brightness(0.72);
+  z-index: 1;
+}
+.hero__image {
+  z-index: 0;
   background: var(--img) center 35% / cover no-repeat, linear-gradient(135deg, #5a3a22, #130a05);
 }
 .hero::after {
-  content: ""; position: absolute; inset: 0;
+  content: ""; position: absolute; inset: 0; z-index: 2;
   background:
     linear-gradient(90deg, rgba(19, 10, 5, 0.92) 0%, rgba(19, 10, 5, 0.7) 32%, rgba(19, 10, 5, 0.08) 64%, rgba(19, 10, 5, 0) 100%),
     linear-gradient(0deg, rgba(201, 138, 75, 0.35) 0%, rgba(201, 138, 75, 0) 28%);
 }
-.hero__content { position: relative; z-index: 2; padding: 0 clamp(24px, 6vw, 96px); max-width: 660px; }
+.hero__content { position: relative; z-index: 3; padding: 0 clamp(24px, 6vw, 96px); max-width: 660px; }
 .hero__title { font-family: var(--serif); font-weight: 500; font-size: clamp(56px, 8vw, 112px); line-height: 0.95; color: var(--white); margin-bottom: 20px; }
 .hero__title em { font-style: normal; color: var(--red); }
 .hero__subtitle { font-size: clamp(15px, 1.4vw, 20px); font-weight: 400; margin-bottom: 16px; }
@@ -183,6 +195,43 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .topic .btn { padding: 12px 20px; gap: 18px; font-size: 15px; color: var(--white); background: rgba(19, 10, 5, 0.4); border-color: rgba(201, 138, 75, 0.85); }
 .topic .btn:hover { background: var(--red); color: #1a0f08; border-color: var(--red); }
 
+/* ---------- Digital Features ---------- */
+.digital-features {
+  position: relative; overflow: hidden; padding: clamp(52px, 7vw, 92px) clamp(20px, 4vw, 80px) clamp(72px, 9vw, 120px);
+  background:
+    radial-gradient(ellipse at top center, rgba(201, 138, 75, 0.12), transparent 46%),
+    linear-gradient(180deg, #140d08 0%, #100903 100%);
+  border-top: 1px solid rgba(201, 138, 75, 0.22);
+}
+.digital-features__head {
+  max-width: 740px; margin: 0 auto clamp(28px, 3vw, 42px) auto; text-align: center;
+}
+.digital-features__head h2 {
+  font-family: var(--serif); font-weight: 500; font-size: clamp(42px, 5vw, 74px); line-height: 1; color: var(--white);
+}
+.digital-features__head h2 em { font-style: normal; color: var(--red); }
+.digital-features__grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; max-width: 1200px; margin: 0 auto;
+}
+.feature-card {
+  position: relative; display: flex; flex-direction: column; gap: 16px; min-height: 220px; padding: 24px 20px 22px;
+  background: rgba(33, 18, 10, 0.82); border: 1px solid rgba(201, 138, 75, 0.28); border-radius: 18px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.14); transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.feature-card:hover {
+  transform: translateY(-4px); border-color: rgba(201, 138, 75, 0.6); box-shadow: 0 24px 38px rgba(201, 138, 75, 0.12);
+}
+.feature-card__icon {
+  display: grid; place-items: center; width: 52px; height: 52px; border-radius: 12px; background: rgba(201, 138, 75, 0.12);
+  border: 1px solid rgba(201, 138, 75, 0.42); font-size: 24px;
+}
+.feature-card h3 {
+  font-family: var(--serif); font-size: clamp(24px, 2vw, 30px); font-weight: 500; color: var(--white);
+}
+.feature-card p {
+  font-size: 14px; line-height: 1.75; color: #dcc8b0; max-width: 28ch;
+}
+
 /* ---------- Footer ---------- */
 .footer { background: var(--charcoal); color: var(--white); border-top: 4px solid var(--red); }
 .footer .logo__name { color: var(--white); }
@@ -236,6 +285,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* Hero photo: slow cinematic zoom and drift */
 .hero__image { animation: kenburns 26s ease-in-out infinite alternate; will-change: transform; transform-origin: 60% 40%; }
+.hero__video { animation: kenburns 26s ease-in-out infinite alternate; will-change: transform; transform-origin: 60% 40%; }
 
 /* Hero text enters one piece at a time */
 .hero__content > * { opacity: 0; animation: rise 0.9s cubic-bezier(0.22, 0.8, 0.24, 1) forwards; }

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Language and Voice</title>
+  <desc id="desc">Illustration of spoken memory and oral tradition with sound waves.</desc>
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17120e"/>
+      <stop offset="100%" stop-color="#4b2b1d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg3)"/>
+  <circle cx="220" cy="190" r="128" fill="#db9d5f" opacity="0.18"/>
+  <circle cx="560" cy="300" r="150" fill="#f1c785" opacity="0.12"/>
+  <g transform="translate(112 90)">
+    <path d="M85 200 C125 120, 165 100, 220 110 C280 121, 310 147, 356 205" fill="none" stroke="#f5d7a5" stroke-width="12" stroke-linecap="round"/>
+    <path d="M104 230 C160 166, 214 166, 264 230" fill="none" stroke="#f5d7a5" stroke-width="12" stroke-linecap="round"/>
+    <path d="M175 107 C181 78, 202 52, 236 52 C276 52, 309 87, 313 125" fill="none" stroke="#d9994d" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="225" cy="183" r="80" fill="#20130d" stroke="#d9994d" stroke-width="5"/>
+    <circle cx="225" cy="183" r="42" fill="#f0c57e" opacity="0.72"/>
+  </g>
+  <g fill="none" stroke="#f1d8a7" stroke-width="5" stroke-linecap="round" opacity="0.85">
+    <path d="M440 140 C490 120, 545 120, 595 150"/>
+    <path d="M430 190 C490 168, 560 172, 620 210"/>
+    <path d="M420 240 C495 214, 570 216, 650 260"/>
+    <path d="M412 290 C486 268, 570 272, 640 312"/>
+  </g>
+  <g fill="#f4cf8e">
+    <circle cx="645" cy="154" r="12"/>
+    <circle cx="660" cy="212" r="10"/>
+    <circle cx="610" cy="255" r="9"/>
+  </g>
+</svg>

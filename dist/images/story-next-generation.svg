@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">The Next Generation</title>
+  <desc id="desc">Illustration representing youth learning and preserving heritage through digital storytelling.</desc>
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d120f"/>
+      <stop offset="100%" stop-color="#573921"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg6)"/>
+  <circle cx="160" cy="144" r="82" fill="#e8b66a" opacity="0.15"/>
+  <circle cx="660" cy="150" r="94" fill="#f2ca8a" opacity="0.14"/>
+  <g transform="translate(120 85)">
+    <rect x="60" y="148" width="162" height="178" rx="18" fill="#2a1a13" stroke="#d79a58" stroke-width="4"/>
+    <path d="M90 190 H190" stroke="#f0d2a1" stroke-width="7" stroke-linecap="round"/>
+    <path d="M90 228 H210" stroke="#f0d2a1" stroke-width="7" stroke-linecap="round"/>
+    <path d="M90 266 H170" stroke="#f0d2a1" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="292" cy="190" r="68" fill="#d99b5d" opacity="0.65"/>
+    <path d="M240 304 C280 248, 332 246, 370 304" fill="none" stroke="#f5d7a3" stroke-width="8" stroke-linecap="round"/>
+    <path d="M345 240 L392 130 L462 240" fill="none" stroke="#f3d7a7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="393" cy="104" r="25" fill="#f5d7a3"/>
+  </g>
+  <g fill="#f5d49d" font-family="Georgia, serif" font-size="54" font-weight="700">
+    <text x="115" y="110">T</text>
+    <text x="618" y="108">N</text>
+  </g>
+</svg>

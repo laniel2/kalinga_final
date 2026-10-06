@@ -4,11 +4,16 @@ import Hero from "./components/Hero.jsx";
 import Section from "./components/Section.jsx";
 import Topics from "./components/Topics.jsx";
 import CommunityPage from "./components/CommunityPage.jsx";
+import DigitalPage from "./components/DigitalPage.jsx";
 import Footer from "./components/Footer.jsx";
 import { intro } from "./data/content.js";
 
-// Tiny hash router: "#/community" shows The Community page, anything else shows the home page.
-const getRoute = () => (window.location.hash.startsWith("#/community") ? "community" : "home");
+// Tiny hash router: "/community" and "/digital" load dedicated pages, everything else shows the home page.
+const getRoute = () => {
+  if (window.location.hash.startsWith("#/community")) return "community";
+  if (window.location.hash.startsWith("#/digital")) return "digital";
+  return "home";
+};
 
 export default function App() {
   const [route, setRoute] = useState(getRoute);
@@ -55,6 +60,8 @@ export default function App() {
       <main>
         {route === "community" ? (
           <CommunityPage />
+        ) : route === "digital" ? (
+          <DigitalPage />
         ) : (
           <>
             <Hero />
