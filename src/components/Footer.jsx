@@ -2,9 +2,9 @@ import Logo from "./Logo.jsx";
 
 const quick = [
   { label: "The Community", href: "#/community" },
-  { label: "History & Heritage", href: "#history" },
-  { label: "Language & Knowledge", href: "#language" },
-  { label: "Community Today", href: "#today" },
+  { label: "History & Heritage", href: "#/history" },
+  { label: "Language & Knowledge", href: "#/language" },
+  { label: "Community Today", href: "#/today" },
   { label: "Digital Heritage", href: "#/digital" },
 ];
 

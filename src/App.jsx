@@ -4,14 +4,21 @@ import Hero from "./components/Hero.jsx";
 import Section from "./components/Section.jsx";
 import Topics from "./components/Topics.jsx";
 import CommunityPage from "./components/CommunityPage.jsx";
+import HistoryPage from "./components/HistoryPage.jsx";
+import LanguagePage from "./components/LanguagePage.jsx";
+import ExplorePage from "./components/ExplorePage.jsx";
 import DigitalPage from "./components/DigitalPage.jsx";
 import Footer from "./components/Footer.jsx";
 import { intro } from "./data/content.js";
 
-// Tiny hash router: "/community" and "/digital" load dedicated pages, everything else shows the home page.
+// Tiny hash router: dedicated cultural pages load here; everything else shows the home page.
 const getRoute = () => {
-  if (window.location.hash.startsWith("#/community")) return "community";
-  if (window.location.hash.startsWith("#/digital")) return "digital";
+  const hash = window.location.hash;
+  if (hash.startsWith("#/community")) return "community";
+  if (hash.startsWith("#/history")) return "history";
+  if (hash.startsWith("#/language")) return "language";
+  if (hash.startsWith("#/today")) return "today";
+  if (hash.startsWith("#/digital")) return "digital";
   return "home";
 };
 
@@ -60,6 +67,12 @@ export default function App() {
       <main>
         {route === "community" ? (
           <CommunityPage />
+        ) : route === "history" ? (
+          <HistoryPage />
+        ) : route === "language" ? (
+          <LanguagePage />
+        ) : route === "today" ? (
+          <ExplorePage type="today" />
         ) : route === "digital" ? (
           <DigitalPage />
         ) : (

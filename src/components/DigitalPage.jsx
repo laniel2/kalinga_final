@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Arrow from "./Arrow.jsx";
 
 const Marker = ({ n }) => (
@@ -112,13 +112,30 @@ export default function DigitalPage() {
   const [activePin, setActivePin] = useState(mapPins[0]);
   const [activeFeature, setActiveFeature] = useState(culturalFeatures[0]);
   const [activeStory, setActiveStory] = useState(null);
+  const [audioEnabled, setAudioEnabled] = useState(true);
+  const audioRef = useRef(null);
+
+  const toggleAudio = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const nextState = !audioEnabled;
+    setAudioEnabled(nextState);
+    audio.muted = !nextState;
+
+    if (nextState) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  };
 
   return (
     <>
       <section className="d-hero" aria-labelledby="d-hero-title">
         <div className="d-hero__video" aria-hidden="true">
           <video className="d-hero__media" autoPlay muted loop playsInline preload="auto">
-            <source src="/images/alan.mp4" type="video/mp4" />
+            <source src="/images/KALINGA%20Your%20Journey%20Begins%20With%20A%20Cup%20of%20Coffee%20%5B2023%20Lumin-awa%20Kalinga%20Tourism%20Promotional%20Video%5D%20-%20Hoy%20Tara!%20%28720p%29.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="d-hero__overlay" aria-hidden="true" />
@@ -231,8 +248,17 @@ export default function DigitalPage() {
         </div>
         <div className="d-video-wrap">
           <video className="d-video" autoPlay muted loop playsInline preload="auto">
-            <source src="/images/alan.mp4" type="video/mp4" />
+            <source src="/images/KALINGA%20Your%20Journey%20Begins%20With%20A%20Cup%20of%20Coffee%20%5B2023%20Lumin-awa%20Kalinga%20Tourism%20Promotional%20Video%5D%20-%20Hoy%20Tara!%20%28720p%29.mp4" type="video/mp4" />
           </video>
+          <audio ref={audioRef} className="d-audio" src="/images/KALINGA%20Your%20Journey%20Begins%20With%20A%20Cup%20of%20Coffee%20%5B2023%20Lumin-awa%20Kalinga%20Tourism%20Promotional%20Video%5D%20-%20Hoy%20Tara!%20%28128k%29.mp3" loop preload="auto" muted={!audioEnabled} />
+          <button
+            type="button"
+            className="d-video-toggle"
+            onClick={toggleAudio}
+            aria-label={audioEnabled ? "Turn audio off" : "Turn audio on"}
+          >
+            {audioEnabled ? "Audio On" : "Audio Off"}
+          </button>
         </div>
       </section>
 

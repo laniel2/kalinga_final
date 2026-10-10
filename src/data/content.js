@@ -3,9 +3,9 @@
 
 export const navLinks = [
   { label: "The Community", href: "#/community" },
-  { label: "History & Heritage", href: "#history" },
-  { label: "Language & Knowledge", href: "#language" },
-  { label: "Community Today", href: "#today" },
+  { label: "History & Heritage", href: "#/history" },
+  { label: "Language & Knowledge", href: "#/language" },
+  { label: "Community Today", href: "#/today" },
   { label: "Digital Heritage", href: "#/digital" },
 ];
 
@@ -36,6 +36,7 @@ export const topics = [
     title: "History & Heritage",
     text: "Discover the history, beliefs, and cultural practices of the Kalinga people. From ancient traditions to important heritage sites, explore how their past continues to influence their identity today.",
     cta: "Explore History",
+    href: "#/history",
   },
   {
     id: "language",
@@ -45,6 +46,7 @@ export const topics = [
     title: "Language & Knowledge",
     text: "Discover the Kalinga language, indigenous knowledge, and traditional practices passed down through generations. From oral traditions to symbols and textiles, their knowledge reflects a deep understanding of nature, community, and life.",
     cta: "Explore Language & Knowledge",
+    href: "#/language",
   },
   {
     id: "today",
@@ -53,6 +55,7 @@ export const topics = [
     title: "Community Today",
     text: "Learn about the modern Kalinga community and how they continue to keep their culture alive. Explore their current initiatives, education, livelihoods, and efforts to pass on their heritage to future generations.",
     cta: "Explore Community Today",
+    href: "#/today",
   },
   {
     id: "digital",

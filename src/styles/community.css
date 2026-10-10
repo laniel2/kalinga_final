@@ -218,10 +218,18 @@
 .d-stat span { font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); }
 .d-stat small { color: #dccbb8; line-height: 1.7; font-size: 13px; }
 .d-video-wrap {
-  overflow: hidden; border-radius: 22px; border: 1px solid rgba(201, 138, 75, 0.3); box-shadow: 0 26px 42px rgba(0, 0, 0, 0.2); transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative; overflow: hidden; border-radius: 22px; border: 1px solid rgba(201, 138, 75, 0.3); box-shadow: 0 26px 42px rgba(0, 0, 0, 0.2); transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .d-video-wrap:hover { transform: translateY(-2px); box-shadow: 0 32px 46px rgba(0, 0, 0, 0.24); }
 .d-video { display: block; width: 100%; height: min(68vh, 560px); object-fit: cover; filter: saturate(0.8) contrast(1.08) brightness(0.72); }
+.d-video-toggle {
+  position: absolute; right: 18px; bottom: 18px; z-index: 2; display: inline-flex; align-items: center; justify-content: center;
+  min-width: 110px; padding: 10px 16px; border: 1px solid rgba(201, 138, 75, 0.8); border-radius: 999px; background: rgba(19, 10, 5, 0.72);
+  color: var(--white); font: 500 11px "IBM Plex Mono", ui-monospace, Consolas, monospace; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.d-video-toggle:hover, .d-video-toggle:focus-visible {
+  transform: translateY(-1px); border-color: rgba(201, 138, 75, 1); background: rgba(201, 138, 75, 0.16);
+}
 .d-feature-focus {
   display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 20px; align-items: center;
   margin-bottom: 22px; padding: 18px; border: 1px solid rgba(201, 138, 75, 0.24); border-radius: 22px; background:
