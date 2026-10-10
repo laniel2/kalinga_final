@@ -12,12 +12,6 @@ export default function Navbar({ route = "home" }) {
           </a>
         ))}
       </nav>
-      <button className="navbar__search" aria-label="Search">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6">
-          <circle cx="10.5" cy="10.5" r="6.5" />
-          <path d="m15.5 15.5 5 5" />
-        </svg>
-      </button>
     </header>
   );
 }

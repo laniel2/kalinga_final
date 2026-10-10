@@ -1,4 +1,3 @@
-import Arrow from "./Arrow.jsx";
 import "../styles/explore.css";
 
 const pages = {
@@ -94,7 +93,6 @@ const sectionMeta = {
 export default function ExplorePage({ type }) {
   const data = pages[type] || pages.today;
   const meta = sectionMeta[type] || sectionMeta.today;
-  const back = type === "identity" || type === "land" ? "#/community" : "#/history";
 
   return (
     <div className={`explore-page explore-page--${type}`}>
@@ -107,7 +105,6 @@ export default function ExplorePage({ type }) {
         </div>
         <div className="c-ornament c-ornament--corner" aria-hidden="true" />
         <div className="explore-hero__content">
-          <a className="explore-back" href={back}>← Back</a>
           <p className="explore-kicker">{data.eyebrow}</p>
           <h1>{data.title[0]}<br /><em>{data.title[1]}</em></h1>
           <p className="explore-lead">{data.lead}</p>
@@ -151,7 +148,6 @@ export default function ExplorePage({ type }) {
       <section className="explore-preserve">
         <p className="explore-kicker">{meta.preserve.kicker}</p>
         <h2>{data.quote}</h2>
-        <a className="btn explore-button" href={back}>← Back <Arrow /></a>
       </section>
 
       <footer className="explore-sources">

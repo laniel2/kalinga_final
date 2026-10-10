@@ -17,7 +17,11 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
-body { background: var(--grey-50); color: var(--ink); font-family: var(--sans); font-weight: 300; -webkit-font-smoothing: antialiased; }
+body {
+  background: var(--grey-50); color: var(--ink); font-family: var(--sans); font-weight: 300;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+img, svg, video { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
@@ -38,8 +42,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .navbar__links { display: flex; gap: 28px; margin-left: auto; }
 .navbar__links a { font-size: 11px; font-weight: 400; color: var(--grey-700); letter-spacing: 0.02em; padding: 6px 0; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; }
 .navbar__links a:hover { color: var(--red); border-color: var(--red); }
-.navbar__search { color: var(--grey-700); display: grid; place-items: center; }
-.navbar__search:hover { color: var(--red); }
 
 /* ---------- Shared bits ---------- */
 .rule { display: block; width: 36px; height: 3px; background: var(--red); margin-bottom: 20px; }
@@ -254,8 +256,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
+  .navbar { gap: 12px; padding: 0 20px; }
   .navbar__links { display: none; }
   .navbar__search { margin-left: auto; }
+  .logo__text { display: none; }
   .hero { align-items: flex-end; padding-bottom: 40px; }
   .hero::after { background: linear-gradient(0deg, rgba(19, 10, 5, 0.95) 8%, rgba(19, 10, 5, 0.7) 45%, rgba(19, 10, 5, 0.1) 100%); }
   .intro { align-items: flex-end; }
@@ -275,6 +279,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .topic.is-bw:not(.is-active) .topic__image { filter: grayscale(1) sepia(0.8) brightness(0.92); }
   .footer__grid { grid-template-columns: 1fr; gap: 28px; }
   .footer__col { border-left: 0; padding-left: 0; min-height: 0; }
+}
+
+@media (max-width: 600px) {
+  .navbar { height: 60px; }
+  .logo__mark { width: 24px; height: 24px; }
+  .logo__name { font-size: 16px; }
+  .logo__tag { letter-spacing: 0.02em; }
+  .btn { width: 100%; justify-content: center; }
 }
 
 /* ---------- Motion ---------- */

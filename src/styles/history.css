@@ -1,21 +1,35 @@
 /* ---------- History & Heritage page ---------- */
+:root { --c-pad: clamp(24px, 7vw, 120px); }
+
 .history-page { background: #130a05; color: var(--ink); }
-.h-hero { position: relative; min-height: clamp(560px, 78vh, 820px); display:flex; align-items:center; overflow:hidden; }
-.h-hero__image { position:absolute; inset:0; background:url("/images/Gemini_Generated_Image_q8cvp3q8cvp3q8cv.jpg") center 42%/cover no-repeat, #2a1a10; filter:sepia(.38) saturate(.9) contrast(1.05) brightness(.8); transform:scale(1.03); animation:h-zoom 24s ease-in-out infinite alternate; }
-.h-hero__overlay { position:absolute; inset:0; background:linear-gradient(90deg,rgba(19,10,5,.96) 0%,rgba(19,10,5,.82) 28%,rgba(19,10,5,.3) 60%,rgba(19,10,5,.12)),linear-gradient(0deg,rgba(19,10,5,.7),transparent 45%); }
-.h-hero__content { position:relative; z-index:2; width:min(620px,100%); padding:80px clamp(24px, 7vw, 120px); }
-.h-eyebrow,.h-kicker { font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace; font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--red); }
+.h-hero {
+  position: relative; display: flex; align-items: center; overflow: hidden; min-height: clamp(460px, 62vh, 640px);
+  background: var(--charcoal);
+}
+.h-hero__image {
+  position:absolute; inset:0; background:url("/images/Gemini_Generated_Image_q8cvp3q8cvp3q8cv.jpg") center 42%/cover no-repeat, #2a1a10;
+  filter:sepia(.38) saturate(.9) contrast(1.05) brightness(.8); transform:scale(1.03); animation:h-zoom 24s ease-in-out infinite alternate;
+}
+.h-hero::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(19, 10, 5, 0.94) 0%, rgba(19, 10, 5, 0.78) 28%, rgba(19, 10, 5, 0.2) 55%, rgba(19, 10, 5, 0) 75%), linear-gradient(0deg, rgba(19, 10, 5, 0.55), rgba(19, 10, 5, 0) 30%);
+}
+.h-hero__content { position:relative; z-index:2; width:min(620px,100%); padding:56px var(--c-pad); max-width: calc(560px + var(--c-pad)); }
+.h-eyebrow,.h-kicker { font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--red); }
 .h-eyebrow { display:flex; align-items:center; gap:14px; margin-bottom:22px; }
-.h-eyebrow i { width:48px;height:1px;background:var(--red); }
-.h-hero h1 { font-family:var(--serif); font-weight:500; font-size:clamp(68px,9vw,132px); line-height:.88; margin-bottom:28px; color:var(--white); }
+.h-eyebrow i { width:52px;height:1px;background:var(--red); }
+.h-hero h1 { font-family:var(--serif); font-weight:500; font-size:clamp(60px, 8vw, 118px); line-height:0.94; margin-bottom:22px; color:var(--white); }
 .h-hero h1 em,.h-section-head em,.h-intro em,.h-heritage h2 em,.h-language h2 em,.h-preserve h2 em { color:var(--red); font-style:normal; }
-.h-lead { font-family:var(--serif); font-size:clamp(21px,2vw,29px); line-height:1.25; color:var(--white); max-width:500px; margin-bottom:14px; }
+.h-lead { font-size:clamp(17px,1.5vw,22px); font-weight:500; line-height:1.4; color:var(--white); max-width:400px; margin-bottom:14px; }
 .h-copy { max-width:520px; color:#dccbb8; font-size:14px; line-height:1.8; margin-bottom:30px; }
 .h-btn { color:var(--white); border-color:rgba(201,138,75,.75); background:rgba(19,10,5,.35); }
 
-.h-intro { display:grid; grid-template-columns:clamp(70px,10vw,150px) minmax(0,760px); gap:40px; padding:clamp(70px,9vw,130px) clamp(24px, 7vw, 120px); border-top:1px solid rgba(201,138,75,.22); }
+.h-intro {
+  display:grid; grid-template-columns:clamp(70px,10vw,150px) minmax(0,760px); gap:40px;
+  padding:clamp(70px,9vw,130px) clamp(24px, 7vw, 120px); border-top:1px solid rgba(201,138,75,.22);
+}
 .h-side-label { writing-mode:vertical-rl; font:500 10px "IBM Plex Mono",monospace; letter-spacing:.25em; color:var(--grey-500); }
-.h-intro__content h2,.h-section-head h2 { font-family:var(--serif); font-weight:500; color:var(--white); font-size:clamp(42px,5.5vw,78px); line-height:.98; margin:14px 0 24px; }
+.h-intro__content h2,.h-section-head h2 { font-family:var(--serif); font-weight:500; color:var(--white); font-size:clamp(38px,3.6vw,56px); line-height:1.05; margin:14px 0 24px; }
 .h-intro__content > p:last-child { max-width:680px; color:#cdbba7; font-size:15px; line-height:1.9; }
 
 .h-timeline { padding:clamp(70px,8vw,120px) clamp(24px, 7vw, 120px); background:linear-gradient(180deg,#1a0f09,#120a05); border-top:1px solid rgba(201,138,75,.2); }

@@ -1,4 +1,4 @@
-/* Community Today & Digital Heritage — mirrors the Language page design */
+/* Community Today & Digital Heritage — aligned to the Community design system */
 :root {
   --c-pad: clamp(24px, 7vw, 120px);
 }
@@ -11,7 +11,7 @@
 
 .explore-hero {
   position: relative;
-  min-height: 760px;
+  min-height: clamp(460px, 62vh, 640px);
   display: grid;
   grid-template-columns: 280px 1fr;
   align-items: start;
@@ -135,14 +135,15 @@
 .explore-hero__content {
   grid-column: 2;
   z-index: 2;
-  padding: clamp(70px, 9vw, 100px) 0 0;
+  padding: 56px var(--c-pad) 0 0;
   color: var(--white);
+  max-width: calc(560px + var(--c-pad));
 }
 .explore-hero h1 {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(50px, 8vw, 88px);
-  line-height: 0.92;
+  font-size: clamp(60px, 8vw, 118px);
+  line-height: 0.94;
   color: var(--white);
   margin: 16px 0 25px;
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.6);
@@ -151,8 +152,9 @@
 .explore-hero__lead {
   max-width: 640px;
   color: #cdbba7;
-  font-size: clamp(16px, 1.5vw, 20px);
-  line-height: 1.85;
+  font-size: clamp(17px, 1.5vw, 22px);
+  font-weight: 500;
+  line-height: 1.4;
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.6);
 }
 

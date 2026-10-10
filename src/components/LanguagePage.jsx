@@ -26,51 +26,80 @@ export default function LanguagePage() {
       <section className="language-hero">
         <div className="language-hero__art"><span>K</span><small>LANGUAGE · MEMORY · KNOWLEDGE</small></div>
         <div className="language-hero__content">
-          <a className="language-back" href="#/history">← Back to History & Heritage</a>
           <p className="language-kicker">03 · LANGUAGE & KNOWLEDGE</p>
           <h1>Words that<br /><em>carry memory.</em></h1>
-          <p>Language is more than communication. It can carry stories, identity, place, relationships, and knowledge from one generation to the next.</p>
+          <p className="language-hero__lead">Language is more than communication.</p>
+          <p className="language-hero__text">It carries stories, identity, place, relationships, and knowledge from one generation to the next.</p>
         </div>
       </section>
 
-      <section className="language-intro">
-        <p className="language-kicker">THE KALINGA LANGUAGE</p>
-        <h2>A landscape of <em>many voices.</em></h2>
-        <p>The Kalinga language is described as a dialect continuum spoken primarily in Kalinga and neighboring areas of northern Luzon. Its varieties reflect the province's geography and the distinct communities that have developed across its valleys and uplands.</p>
+      <section className="language-intro c-sec">
+        <div className="language-ornament c-ornament c-ornament--edge" aria-hidden="true" />
+        <div className="language-section-copy">
+          <div className="c-marker"><span>01</span><i /></div>
+          <div className="c-sec__body">
+            <p className="c-tags">The Kalinga language</p>
+            <h2>A landscape of <em>many voices.</em></h2>
+            <p>The Kalinga language is described as a dialect continuum spoken primarily in Kalinga and neighboring areas of northern Luzon. Its varieties reflect the province's geography and the distinct communities that have developed across its valleys and uplands.</p>
+          </div>
+        </div>
+        <div className="language-intro__panel">
+          <div>
+            <strong>08</strong>
+            <span>language varieties</span>
+          </div>
+          <div>
+            <strong>06</strong>
+            <span>knowledge forms</span>
+          </div>
+        </div>
       </section>
 
-      <section className="language-varieties">
-        <div className="language-section-head">
-          <p className="language-kicker">01 · LANGUAGE VARIETIES</p>
-          <h2>Different voices.<br /><em>Connected heritage.</em></h2>
+      <section className="language-varieties c-sec">
+        <div className="language-section-copy">
+          <div className="c-marker"><span>02</span><i /></div>
+          <div className="language-section-head">
+            <p className="language-kicker">Language varieties</p>
+            <h2>Different voices.<br /><em>Connected heritage.</em></h2>
+          </div>
         </div>
         <div className="language-variety-grid">
           {varieties.map(([n, title, text]) => (
             <article key={title} className="language-variety">
-              <strong>{n}</strong><div><h3>{title}</h3><p>{text}</p></div>
+              <strong>{n}</strong>
+              <div>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </div>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="knowledge-section">
+      <section className="knowledge-section c-sec">
         <div className="knowledge-copy">
-          <p className="language-kicker">02 · CULTURAL KNOWLEDGE</p>
-          <h2>What a language<br /><em>helps us remember.</em></h2>
-          <p>Knowledge is not only stored in books. It can live in conversations, stories, songs, names, practices, and the relationships through which people learn from one another.</p>
+          <div className="c-marker"><span>03</span><i /></div>
+          <div className="c-sec__body">
+            <p className="language-kicker">Cultural knowledge</p>
+            <h2>What a language<br /><em>helps us remember.</em></h2>
+            <p>Knowledge is not only stored in books. It can live in conversations, stories, songs, names, practices, and the relationships through which people learn from one another.</p>
+          </div>
         </div>
         <div className="knowledge-grid">
           {knowledge.map(([title, text]) => (
-            <article key={title}><span>•</span><h3>{title}</h3><p>{text}</p></article>
+            <article key={title}>
+              <span>•</span>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
           ))}
         </div>
       </section>
 
       <section className="language-preserve">
-        <p className="language-kicker">03 · KEEPING KNOWLEDGE ALIVE</p>
+        <p className="language-kicker">04 · KEEPING KNOWLEDGE ALIVE</p>
         <h2>Preservation begins<br /><em>with use.</em></h2>
         <p>Supporting indigenous language means listening to speakers, respecting community knowledge, documenting responsibly, and creating opportunities for younger generations to hear, learn, speak, and pass the language forward.</p>
-        <a className="btn language-button" href="#/history">Return to History & Heritage <span>→</span></a>
       </section>
 
       <footer className="language-sources">
